@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Zawaya Walk Sharjah </title>
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/fontstyle.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="web-icon.png">
+</head>
+<body>
+
+    <!-- FADE OUT ANIMATION WHEN LOADED -->
+    <span class="fade"></span>
+    <main>
+        <!-- SUB HERO BANNER START -->
+        <section class="sub-hero-banner" style="background-image: url('art/overlay.webp');">
+            <div class="hero-socials">
+                <a href="https://www.facebook.com/zawayawalkshj/" class="mt-a icon-link" aria-label="Follow us on facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/zawayawalkshj/" class="icon-link mt-10" aria-label="Follow us on instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/zawayawalk/about/" class="icon-link mt-10" aria-label="Follow us on linkedin">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/@zawayawalk4512" class="icon-link mt-10" aria-label="subscribe us on youtube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+        </section>
+        <!-- SUB HERO BANNER END -->
+
+        <!-- NAVIGATION START -->
+        <nav>
+            <div class="contained">
+                <a href="index.html" class="logo fc-primary ff-damion row flex-alig-center">
+                    <span class="fs-h2">Zawaya Walk</span>
+                 </a>
+                <input type="checkbox" name="tablet-mobile-menu" class="tab-mob-menu" aria-label="tablet and mobile menu">
+                    <div class="navigation-container">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shops.html">All shops</a>
+                        <a href="events.html"> Events</a>
+                        <a href="career/career.html">Career</a>
+                        <a href="contact.html" class="btn-bg1 border-round">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+        <a href="#" class="btn-back-to-top" aria-label="Back to top button">
+            <i class="bi bi-chevron-up"></i>
+        </a>
+        <!-- NAVIGATION END -->
+            <style>
+                
+                .container{
+                    position: relative;
+                    min-height: 80vh;
+                    background: #334;
+        
+                }
+        
+                .container h1{
+                    color: aliceblue;
+                    text-align: center;
+                    padding: 15px;
+                    font-size: 40px;
+                    font-weight: normal;
+        
+                }
+        
+                .container .video-container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 15px;
+                    justify-content: center;
+                    padding: 15px;
+        
+                }
+        
+        
+                .container .video-container .video{
+                    height: 250px;
+                    width: 350px;
+                    border: 5px solid #fff;
+                    border-radius: 5px;
+                    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+                    cursor: pointer;
+                    overflow: hidden;
+                }
+        
+                .container .video-container .video video{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: .2s linear;
+                }
+        
+                .container .video-container .video:hover video {
+                    transform: scale(1.1);
+                }
+        
+                .container .popup-video{
+                    position: fixed;
+                    top: 0; left: 0;
+                    z-index: 100;
+                    background: rgba(0,0,0,.8);
+                    height: 100%;
+                    width: 100%;
+                    display: none;
+                }
+        
+                .container .popup-video video{
+                    position: absolute;
+                    top: 50%; left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 750px;
+                    border-radius: 5px;
+                    border: 3px solid #fff;
+                }
+        
+                .container .popup-video span{
+                    position: absolute;
+                    top: 5px; right: 20px;
+                    font-size: 50px;
+                    color: #fff;
+                    font-weight: bolder;
+                    z-index: 100;
+                    cursor: pointer;
+        
+                }
+                /* For iPhone 4 (320px x 480px) */
+                @media (max-width: 320px) and (max-height: 480px) {
+                    .container .video-container .video {
+                        width: 100%;
+                        max-width: 100%;
+                        height: auto;
+                    }
+        
+                    .container .popup-video video {
+                        width: 90%;
+                    }
+                }
+        
+                /* For iPhone X (375px x 812px) */
+                @media (width: 375px) and (height: 812px) {
+                    .container .video-container .video {
+                        width: calc(50% - 30px);
+                        max-width: calc(50% - 30px);
+                        height: auto;
+                    }
+        
+                    .container .popup-video video {
+                        width: 90%;
+                    }
+                }
+        
+                /* For Google Pixel (411px x 731px) */
+                @media (width: 411px) and (height: 731px) {
+                    .container .video-container .video {
+                        width: 50%;
+                        max-width: 50%;
+                        height: auto;
+                    }
+                
+                    .container .popup-video {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                
+                    .container .popup-video video {
+                        max-width: 100%;
+                        max-height: 100%;
+                        width: auto;
+                        height: auto;
+                    }
+                }
+                
+                /* For Tablet/Laptop in Landscape mode (1025px and above) */
+                @media (min-width: 1025px) and (orientation: landscape) {
+                    .container .popup-video video {
+                        width: 750px;
+                    }
+                }
+
+                h5{
+                    color: rgb(131, 131, 44);
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container"> 
+
+                <div class="video-container">
+                    <div class="video"> <video src="Videos/video.mp4" muted poster="Videos/Poster1.jpg" ></video></div>
+                    <div class="video"> <video src="Videos/video2.mp4" muted ></video></div>
+                    <div class="video"> <video src="Videos/video3.mp4" muted ></video></div>
+                    <div class="video"> <video src="Videos/video4.mp4" muted ></video></div>
+                    <div class="video"> <video src="Videos/video5.mp4" muted ></video></div>
+                    <div class="video"> <video src="Videos/video6.mp4" muted ></video></div>
+                    <div class="video"> <video src="Videos/video7.mp4" muted ></video></div>
+                    <div class="video"> <video src="Videos/video8.mp4" muted poster="Videos/poster2.jpg"></video></div>
+            
+                </div>
+            
+                <div class="popup-video">
+                    <span>&times;</span>
+                    <video src="video.mp4" autoplay controls ></video>
+                </div>
+            
+            </div>
+            <script>
+                document.querySelectorAll('.video-container video').forEach(vid => {
+                  vid.onclick = () =>{
+                    document.querySelector('.popup-video').style.display = 'block';
+                    document.querySelector('.popup-video video').src = vid.getAttribute('src');
+                  }
+                });
+            
+                document.querySelector('.popup-video span').onclick = () => {
+                    const popupVideo = document.querySelector('.popup-video');
+                    const video = popupVideo.querySelector('video');
+                    video.pause(); // Pause the video
+                    popupVideo.style.display = 'none';
+                }
+            </script>
+        
+
+            <section class="contained row">
+                <div class="col-balance">
+                    <span class="fc-primary fs-h2">
+                        Welcome to Zawaya Walk, where innovation meets inspiration! Our mission is 
+                        to elevate your aspirations through uniquely tailored, unparalleled services
+                    </span>
+                    <h4>
+                        Let's discover what makes Zawaya Walk so captivating!
+                    </h4>
+                    Zawaya Walk project includes many categories and groups of stores.
+                    </p>
+
+                    <p>
+                    <h5>Group A - المجموعة أ </h5> يضم 4 محلات تجارية، مساحة كل 60 مترًا مربعًا، بطول 10 أمتار وعرض 5 أمتار، وجميعها تطل على الشارع الرئيسي من جهة والبحيرة من الجهة الأخرى.
+                    <br> <br> It includes 4 shops, every 60 square metres in space, being 10 meters in length and 5 metres in width,
+                     and all will overlook the main street from one side and the lake on the other side.
+                    </p>
+
+                    <h5>Group B - المجموعة ب</h5> تضم الفئة B مبنيين اثنين يضمان محال تجارية ومطاعم داخلية وخارجية، تبلغ مساحة كل منهما 130 متر مربع ويطلان على البحيرة ويضمان تراس علوي مطل على البحيرة ليعطيان نظرة جمالية وإطلالة رائعة
+                   <br> <br> Group B comprises two buildings each containing indoor and outdoor
+                    restaurants, with 130 squared meters space, all of which are overlooking the lake. The two buildings also include
+                    terraces overlooking the lake in a beautiful way giving an aesthetic look and great views of the scenery below.
+                 </p>
+                </div>
+                <div class="col-balance">
+                    <div class="sticky-img-dual">
+                        <img src="art/hero1.webp" alt="">
+                        <img src="svg/blob.svg" alt="" class="blob">
+                        <img src="art/hero2.webp" alt="">
+                    </div>
+                </div>
+                <div class="sticky-img-dual-spacer"></div>
+                
+                
+                <div class="col-balance">
+                    <div class="sticky-img-dual">
+                        <img src="art/hero1.webp" alt="">
+                        <img src="svg/blob.svg" alt="" class="blob">
+                        <img src="art/hero2.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-balance">
+                    <p>
+                        <h5>Group C - المجموعة ج</h5>
+                    <p>
+                        الفئة C تشمل أيظاً مبنيين اثنين يضمان
+                        محال تجارية ومطاعم داخلية وخارجية، تبلغ
+                        مساحة كل منهما ١٣٥ متر مربع ويطلان على
+                        البحيرة ليعطيان نظرة جمالية و إطلالة رائعة
+                        على المكان
+                        <br> <br>
+                        Group C includes two building also each of them contains shops and 
+                        indoor and outdoor restaurants, with 125 square meters space for each,
+                        and with terraces overlooking the lake and all the garden down, in an
+                        amazing scenery and great views for the place.
+                    </p>
+                    <p>
+                        <h5> Group D - المجموعة د</h5>
+                        تتميز الفئة D بأنها تضم مبنيين رئيسيين
+                        على جانبي البحيرة يفصل بينهما جسراً لعبور
+                        المشاة تبلغ مساحة كل محل فيهما 100 متر
+                        مربع ويشكلان مركزي والتسوق الرئيسي في
+                        المشروع
+                        <br><br>
+                        Group D is considered biggest among all the previous categories and
+                        consisting of two main buildings, on both sides of the lake separated by a
+                        bridge for the visitors to cross to the other side of the lake with 100 square
+                        meters space for each shop in both buildings.
+                    </p>
+                    <p>
+                        <h5> Last Group -  المجموعة الأخيرة </h5>
+                        الجزء الأخير من المشروع يشمل على 3 أبنية،
+                        المبنى الرئيسي في الوسط عبارة عن هايبر
+                        ماركت، ويطل مباشرة على الممشى المحيط
+                        بالمشروع، أما المبنيين الآخرين فأحدهما عبارة
+                        عن محلات للأجهزة والمستلزمات الالكترونية
+                        والآخر عبارة عن منطقة ترفيهية للأطفال
+                        <br> <br>
+                        The last part of the project includes three buildings, the main building in the
+                        middle is a hypermarket and it directly overlook the walkway which surround
+                        the overall project. One of the other two buildings, is a shop of electronic supplies and devices
+                        and the other in a recreational and entertainment area for children, containing a lot of wonderful things.                     
+                    </p>
+                </div>
+                <div class="sticky-img-dual-spacer"></div>
+            </section>
+    
+    
+        </main>
+    
+    <!-- FOOTER START -->
+    <footer class="fc-white">
+        <div class="contained row flex-just-center">
+
+            <!-- FOOTER WEBSITE MOTO START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Zawaya Walk</h3>
+                <p>
+                    Share your vision with us, and together, we'll transform it into our mission.
+                </p>
+                <p>
+                    We continuously evolve, aligning with the essence of time and space, fostering self-awareness in all that we create.
+                </p>
+        </div>
+            <!-- FOOTER WEBSITE MOTO END -->
+
+            <!-- FOOTER QUICK CONTACT START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Get in touch</h3>
+                <a href="mailto:zawayawalkshj@gmail.com" class="display-block fc-white icon-link mt-10 mb-10">
+                    <i class="bi bi-envelope-fill"></i>
+                    zawayawalkshj@gmail.com
+                </a>
+                <a href="tel:0565633333" class="display-block fc-white icon-link mt-10 mb-10">
+                    <i class="bi bi-telephone-fill"></i>
+                    056 563 3333
+                </a>                
+                <a href="https://www.google.com/maps/place/Zawaya+Walk/@25.329809,55.4294653,15z/data=!4m6!3m5!1s0x3e5f594b48779d95:0x130ae0ad7060527c!8m2!3d25.329809!4d55.4294653!16s%2Fg%2F11h5lqc8g9?entry=ttu" class="display-block fc-white icon-link mt-10 mb-10"> 
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Al Shahba - Mughaidir Suburb
+                </a>
+                <a href="https://www.facebook.com/zawayawalkshj/" class="display-inblock fc-white icon-link mt-20" aria-label="Follow on facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/zawayawalkshj/" class="display-inblock fc-white icon-link" aria-label="Follow on instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/zawayawalk/about/" class="display-inblock fc-white icon-link" aria-label="Follow on linkedin">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/@zawayawalk4512" class="display-inblock fc-white icon-link" aria-label="Follow on youtube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+            <!-- FOOTER QUICK CONTACT END -->
+            
+            <!-- FOOTER SCHEDULE START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Opening hours</h3>
+                <p class="mt-10 mb-10 fw-bold">
+                    Monday - Thursday :
+                    <span class="fw-normal display-block">7:00 AM- 2:00 AM</span>
+                </p>
+                <br>
+                <p class="mt-10 mb-10 fw-bold">
+                    Friday - Sunday :
+                    <span class="fw-normal display-block">7:00 AM- 2:00 AM</span>
+                </p>
+            </div>
+            <!-- FOOTER SCHEDULE END -->
+            
+            <!-- FOOTER USEFUL LINKS START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Links</h3>
+                <a href="index.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Home
+                </a>
+                <a href="about.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    About
+                </a>
+                <a href="shops.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Shops
+                </a>
+                <a href="events.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Events
+                </a>
+                <a href="career.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Career
+                </a>
+                <a href="contact.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Contact
+                </a>
+            </div>
+            <!-- FOOTER USEFUL LINKS END -->
+            
+        </div>
+        <div class="copy ta-center fc-white">
+            <small>&copy; Zawaya Walk - Copyright 2023</small>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script>
+if ('ontouchstart' in window || (window.matchMedia('(max-width: 768px)').matches)) {
+    const emailLink = document.querySelector('a[href="mailto:zawayawalkshj@gmail.com"]');
+    const phoneLink = document.querySelector('a[href="tel:0565633333"]');
+
+    // Prevent default link behavior
+    emailLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'mailto:zawayawalkshj@gmail.com';
+    });
+
+    phoneLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.location.href = 'tel:0565633333';
+    });
+}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Zawaya Walk Sharjah </title>
+    <link rel="stylesheet" href="icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/fontstyle.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="web-icon.png">
+</head>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #myInput {
+      background-image: url('art/searchicon.gif');
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 20px 12px 40px;
+      border: 1px solid #ddd;
+      margin-bottom: 12px;
+    }
+    
+    #myTable {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid #ddd;
+      font-size: 18px;
+    }
+    
+    #myTable th {
+        color: rgb(255, 255, 255);
+        
+    }
+    
+    #myTable th,
+    #myTable td {
+        text-align: left;
+        padding: 15px;
+    }
+    
+    #myTable tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+
+
+    #myTable tr:hover {
+        background-color:#eceffc;
+    }
+
+
+    </style>
+    <body>
+    <!-- FADE OUT ANIMATION WHEN LOADED -->
+    <span class="fade"></span>
+    <main>
+        <!-- SUB HERO BANNER START -->
+        <section class="sub-hero-banner" style="background-image: url('art/overlay.webp');">
+            <div class="hero-socials">
+                <a href="https://www.facebook.com/zawayawalkshj/" class="mt-a icon-link" aria-label="Follow us on facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/zawayawalkshj/" class="icon-link mt-10" aria-label="Follow us on instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/zawayawalk/about/" class="icon-link mt-10" aria-label="Follow us on linkedin">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/@zawayawalk4512" class="icon-link mt-10" aria-label="subscribe us on youtube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+        </section>
+        <!-- SUB HERO BANNER END -->
+
+        <!-- NAVIGATION START -->
+        <nav>
+            <div class="contained">
+                <a href="index.html" class="logo fc-primary ff-damion row flex-alig-center">
+                    <span class="fs-h2">Zawaya Walk</span>
+                 </a>
+                <input type="checkbox" name="tablet-mobile-menu" class="tab-mob-menu" aria-label="tablet and mobile menu">
+                    <div class="navigation-container">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="shops.html">All shops</a>
+                        <a href="events.html"> Events</a>
+                        <a href="career/career.html">Career</a>
+                        <a href="contact.html" class="btn-bg1 border-round">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+        <a href="#" class="btn-back-to-top" aria-label="Back to top button">
+            <i class="bi bi-chevron-up"></i>
+        </a>
+        <!-- NAVIGATION END -->
+
+        <!-- SHOPS START -->
+        <section class="contained">
+                <div class="col-wide mlmr-a ta-center">
+                    <span class="fc-primary fs-h2">
+                        Check the availability of go-to Retail stores right here.
+                    </span>
+                    <p>
+                        If you can't find yours, please contact us and we will resolve the issue as soon as possible.
+                    </p>
+                </div>
+
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                
+                <table id="myTable">
+                <tr class="header">
+                    <th style="width:60%;">Name</th>
+                    <th style="width:40%;">Genre</th>
+                </tr>
+
+                <tr>
+                    <td>Dark Door</td>
+                    <td>food</td>
+                </tr>
+
+                <tr>
+                    <td>Starbucks</td>
+                    <td>food</td>
+                
+                
+                </tr>
+
+                <tr>
+                    <td>Almalfi fashions</td>
+                    <td>Abaya </td>
+                  </tr>
+
+                  <tr>
+                    <td>Nay perfume</td>
+                    <td>Perfume</td>
+                  </tr>
+
+                  <tr>
+                    <td>Al Amin Optics</td>
+                    <td>Optics</td>
+                  </tr>
+
+                  <tr>
+                    <td>Home Texture</td>
+                    <td>Furniture</td>
+                  </tr>
+
+                  <tr>
+                    <td>Kyboots Shoes</td>
+                    <td>Shoes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Tim Hortons</td>
+                    <td>nostalgic food</td>
+                  </tr>
+
+                  <tr>
+                    <td> Caliburger</td>
+                    <td> Burgers </td>
+                  </tr>
+
+                  <tr>
+                    <td> Tulip Flower </td>
+                    <td>Fresh Flowers </td>
+                  </tr>
+
+
+                  <tr>
+                    <td> Sushi- Box</td>
+                    <td> exotic food</td>
+                  </tr>
+
+                  <tr>
+                    <td> Katrina sweets</td>
+                    <td> Bakery Shop </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>Karima Medical Center</td>
+                    <td> Health Center</td>
+                  </tr>
+
+
+                  <tr>
+                    <td> Zaina Service</td>
+                    <td> Domestic Service</td>
+                  </tr>
+
+                  <tr>
+                    <td> Giggle And Play</td>
+                    <td> Kids Playground </td>
+                  </tr>
+
+
+                  <tr>
+                    <td>Yo Boba</td>
+                    <td> Boba Drinks</td>
+                  </tr>
+
+
+                  <tr>
+                    <td>Buns And Coffee</td>
+                    <td> Coffee Shop </td>
+                  </tr>
+
+                  <tr>
+                    <td> Chef - Eyad </td>
+                    <td> restaurant </td>
+                  </tr>
+
+                  
+                </table>
+                
+            </div>
+        </section>
+        <!-- END -->
+    </main>
+    
+    <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+        </script>
+
+
+    
+    <!-- FOOTER START -->
+    <footer class="fc-white">
+        <div class="contained row flex-just-center">
+            <!-- FOOTER WEBSITE MOTO START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Zawaya Walk</h3>
+                <p>
+                    Share your vision with us, and together, we'll transform it into our mission.
+                </p>
+                <p>
+                    We continuously evolve, aligning with the essence of time and space, fostering self-awareness in all that we create.
+                </p>
+        </div>
+            <!-- FOOTER WEBSITE MOTO END -->
+
+            <!-- FOOTER QUICK CONTACT START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Get in touch</h3>
+                <a href="mailto:zawayawalkshj@gmail.com" class="display-block fc-white icon-link mt-10 mb-10">
+                    <i class="bi bi-envelope-fill"></i>
+                    zawayawalkshj@gmail.com
+                </a>
+                
+                <a href="tel:0565633333" class="display-block fc-white icon-link mt-10 mb-10">
+                    <i class="bi bi-telephone-fill"></i>
+                    056 563 3333
+                </a>                
+
+                <a href="https://www.google.com/maps/place/Zawaya+Walk/@25.329809,55.4294653,15z/data=!4m6!3m5!1s0x3e5f594b48779d95:0x130ae0ad7060527c!8m2!3d25.329809!4d55.4294653!16s%2Fg%2F11h5lqc8g9?entry=ttu" class="display-block fc-white icon-link mt-10 mb-10"> 
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Al Shahba - Mughaidir Suburb
+                </a>
+
+                <a href="https://www.facebook.com/zawayawalkshj/" class="display-inblock fc-white icon-link mt-20" aria-label="Follow on facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/zawayawalkshj/" class="display-inblock fc-white icon-link" aria-label="Follow on instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/zawayawalk/about/" class="display-inblock fc-white icon-link" aria-label="Follow on linkedin">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/@zawayawalk4512" class="display-inblock fc-white icon-link" aria-label="Follow on youtube">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </div>
+            <!-- FOOTER QUICK CONTACT END -->
+            
+            <!-- FOOTER SCHEDULE START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Opening hours</h3>
+                <p class="mt-10 mb-10 fw-bold">
+                    Monday - Thursday :
+                    <span class="fw-normal display-block">7:00 AM- 2:00 AM</span>
+                </p>
+                <br>
+                <p class="mt-10 mb-10 fw-bold">
+                    Friday - Sunday :
+                    <span class="fw-normal display-block">7:00 AM- 2:00 AM</span>
+                </p>
+            </div>
+            <!-- FOOTER SCHEDULE END -->
+            
+            <!-- FOOTER USEFUL LINKS START -->
+            <div class="col-quad">
+                <h3 class="ff-damion">Useful Links</h3>
+                <a href="index.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Home
+                </a>
+                <a href="about.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    About
+                </a>
+                <a href="shops.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Shops
+                </a>
+                <a href="events.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Events
+                </a>
+                <a href="career.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Career
+                </a>
+                <a href="contact.html" class="display-block fc-white mt-5 mb-5">
+                    <i class="bi bi-chevron-compact-right"></i>
+                    Contact
+                </a>
+            </div>
+            <!-- FOOTER USEFUL LINKS END -->
+            
+        </div>
+        <div class="copy ta-center fc-white">
+            <small>&copy; Zawaya Walk - Copyright 2023</small>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script>
+        if ('ontouchstart' in window || (window.matchMedia('(max-width: 768px)').matches)) {
+            const emailLink = document.querySelector('a[href="mailto:zawayawalkshj@gmail.com"]');
+            const phoneLink = document.querySelector('a[href="tel:0565633333"]');
+        
+            // Prevent default link behavior
+            emailLink.addEventListener('click', (event) => {
+                event.preventDefault();
+                window.location.href = 'mailto:zawayawalkshj@gmail.com';
+            });
+        
+            phoneLink.addEventListener('click', (event) => {
+                event.preventDefault();
+                window.location.href = 'tel:0565633333';
+            });
+        }
+            </script>
+        
+    
+</body>
+</html>
